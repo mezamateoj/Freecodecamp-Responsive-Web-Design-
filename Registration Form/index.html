@@ -9,61 +9,69 @@
   </head>
   <body>
     <h1>Registration Form</h1>
+    <small id="author">Made By Mateo</small>
     <p>Please fill out this form with the required information</p>
     <form method="post" action="https://register-demo.freecodecamp.org">
-      <fieldset>
+        <!-- First Fieldset -->
+        <fieldset>
         <label for="first-name"
-          >Enter Your First Name: <input required type="text" id="first-name"
+          >Enter Your First Name: <input required name="name" type="text" id="first-name"
         /></label>
         <label for="last-name"
-          >Enter Your Last Name: <input required type="text" id="last-name"
+          >Enter Your Last Name: <input required name="last-name" type="text" id="last-name"
         /></label>
         <label for="email"
-          >Enter Your Email: <input required type="email" id="email"
+          >Enter Your Email: <input required name="email" type="email" id="email"
         /></label>
         <label for="new-password"
           >Create a New Password:
           <input
             required
+            name="password"
             type="password"
             id="new-password"
             pattern="[a-z0-5]{8,}"
         /></label>
       </fieldset>
+      <!-- Second fieldset -->
       <fieldset>
         <label for="personal-account"
-          ><input id="personal-account" type="radio" name="account-type" />
+          ><input class="inline" id="personal-account" type="radio" name="account-type" />
           Personal Account</label
         >
         <label for="business-account"
-          ><input id="business-account" type="radio" name="account-type" />
+          ><input class="inline" id="business-account" type="radio" name="account-type" />
           Business Account</label
         >
         <label for="terms-and-conditions"
-          ><input id="terms-and-conditions" required type="checkbox" id="" /> I
+          ><input class="inline " id="terms-and-conditions" name="terms" required type="checkbox" id="" /> I
           accept the
           <a href="https://www.freecodecamp.org/news/terms-of-service/"
             >terms and conditions</a
           ></label
         >
       </fieldset>
+      <!-- third fieldset -->
       <fieldset>
-        <label for="">
+        <label for="profile-picture">
           Upload a profile picture:
-          <input type="file" name="" id="" />
+          <input type="file" name="profile-img" id="profile-picture"/>
         </label>
-        <label for="">Input your age (years): <input min="13" max="120" type="number"></label>
-        <label for="">How did you hear about us?
-            <select name="" id="">
+
+        <label for="age">Input your age (years): <input id="age" name="age" min="13" max="120" type="number"></label>
+        <label for="referrer">How did you hear about us?
+            <select name="multiple-choice" id="referrer">
                 <option value="">(select one)</option>
-                <option value="">freeCodeCamp News</option>
-                <option value="">freeCodeCamp YouTube Channel</option>
-                <option value="">freeCodeCamp Forum</option>
-                <option value="">Other</option>
+                <option value="1">freeCodeCamp News</option>
+                <option value="2">freeCodeCamp YouTube Channel</option>
+                <option value="3">freeCodeCamp Forum</option>
+                <option value="4">Other</option>
             </select>
-        </label>    
+        </label>
+        <label for="bio">Provide a bio: <textarea name="bio" id="bio" cols="30" rows="3"></textarea></label>
       </fieldset>
-      <input type="submit" value="Submit" />
+
+      <input name="submit-form" type="submit" value="Submit" />
     </form>
   </body>
 </html>
