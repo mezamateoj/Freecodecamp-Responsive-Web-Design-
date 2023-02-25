@@ -1,0 +1,26 @@
+/* https://survey-form.freecodecamp.rocks/ */
+
+body {
+    background-color: #E1EEDD;
+    font-size: 20px;
+}
+
+
+#title {
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+
+#description {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.form-group {
+    margin: 20px;
+    text-align: center;
+    display: block;
+}
+

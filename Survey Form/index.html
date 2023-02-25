@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Help us improve our platform</p>
+
+    <form id="survey-form" action="">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" min="13" max="120" id="number" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>Which option</p>
+            <select name="role" id="dropdown" class="form-control">
+                <option disabled selected value>Select Role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="part-timer">Part Time Job</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Are you ok</p>
+            <label for="">
+                <input name="user" value="yes" type="radio" checked>
+                Yes
+            </label>
+            <label for="">
+                <input name="user" value="no" type="radio">
+                No
+            </label>
+
+        </div>
+        <div class="form-group">
+            <p>Choose All that Applied</p>
+            <label for="front">
+                <input name="front" type="checkbox" value="front-end">
+                Front-End 
+            </label>
+            <label for="back">
+                <input name="back" type="checkbox" value="back-end">
+                Back-End
+            </label>
+            <label for="data">
+                <input name="data" type="checkbox" value="data-science">
+                Data-Science
+            </label>
+            <label for="challenges">
+                <input name="challenges" type="checkbox" value="challenges">
+                Challenges
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Additional Comments?</p>
+            <label for="comments">
+                <textarea class="input-text-area" name="comments" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </div>
+        <div class="form-group">
+            <button class="submit-button" type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
